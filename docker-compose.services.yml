@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  api:
+    depends_on:
+      - postgres
+    build:
+      context: ./rust_api
+    ports:
+      - '8080:8080'
+    volumes:
+      - type: bind
+        source: ./rust_api
+        target: /app
+    environment:
+      DATABASE_URL: postgres://postgres:P%40ssw0rd@postgres/development
+    tty: true
+    stdin_open: true
+    restart: always
+
+  next:
+    build:
+      context: ./
+    ports:
+      - '3000:3000'
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
+    tty: true
+    stdin_open: true
+    restart: always

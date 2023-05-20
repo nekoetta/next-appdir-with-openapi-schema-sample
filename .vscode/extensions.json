@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "csstools.postcss",
+    "rust-lang.rust-analyzer"
+  ]
+}

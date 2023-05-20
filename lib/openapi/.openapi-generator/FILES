@@ -1,0 +1,13 @@
+.openapi-generator-ignore
+apis/AuthApi.ts
+apis/CustomersApi.ts
+apis/UsersApi.ts
+apis/index.ts
+index.ts
+models/CustomerCategory.ts
+models/LoginInfo.ts
+models/NewCategoryBody.ts
+models/NewUser.ts
+models/User.ts
+models/index.ts
+runtime.ts
