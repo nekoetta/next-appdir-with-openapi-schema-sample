@@ -2,14 +2,9 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## 起動方法(Docker)
-
-1. 以下コマンドで起動できます  
-   `docker-compose -f docker-compose.yml -f docker-compose.services.yml up -d`
-
 ## サーバ・クライアント連携の仕組み
 
-サーバー側で openapi_schema.json を作成します。
+コードファースト、スキーマファーストお好きな方でサーバー側のopenapiの定義を openapi_schema.json として作成します。
 next 側で npm run openapi-generate-client を実行するとクライアントコードを自動生成するようになっています。
 各 page.tsx でクライアントコードを使用できます。
 
