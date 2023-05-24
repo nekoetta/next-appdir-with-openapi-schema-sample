@@ -9,7 +9,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## サーバ・クライアント連携の仕組み
 
-rust_api ディレクトリで cargo run --bin generate_openapi_schema を実行すると openapi_schema.json を作成します。
+サーバー側で openapi_schema.json を作成します。
 next 側で npm run openapi-generate-client を実行するとクライアントコードを自動生成するようになっています。
 各 page.tsx でクライアントコードを使用できます。
 
