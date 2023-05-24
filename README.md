@@ -5,6 +5,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## サーバ・クライアント連携の仕組み
 
 コードファースト、スキーマファーストお好きな方でサーバー側のopenapiの定義を openapi_schema.json として作成します。
+例: https://github.com/nekoetta/actix-web-utoipa-jwtauth-sample
+
 next 側で npm run openapi-generate-client を実行するとクライアントコードを自動生成するようになっています。
 各 page.tsx でクライアントコードを使用できます。
 
